@@ -1,0 +1,17 @@
+basic of html5
+header tags
+paragraph tags
+image tag
+form tag
+a tag
+br tag
+simple working structure
+download attribute
+creating favicon
+cachge is a issue for favicon
+all element refrence-w3 schools
+
+1. Git Status
+2. Git Add .
+3. Git Commit-m '......'
+4. Git Push
