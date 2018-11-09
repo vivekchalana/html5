@@ -9,18 +9,25 @@
 // document.getElementsByTagName("p")[8].innerHTML ="number 9"
 // document.getElementsByTagName("p")[9].innerHTML ="number 10"
 
+// let i;
+
+// let  theCollection = document.getElementsByTagName("p");
+
+// for (i=0; i<theCollection.length; i+=1){
+// 	theCollection[i].innerHTML = "number" + (i+1).toString();
+// }
+
+
 let i;
-
-
-
 
 let  theCollection = document.getElementsByTagName("p");
 
-
-
-
-
 for (i=0; i<theCollection.length; i+=1){
+	if(i===5){
+		// break;
+		continue;
+	}
+
 	theCollection[i].innerHTML = "number" + (i+1).toString();
 }
 
