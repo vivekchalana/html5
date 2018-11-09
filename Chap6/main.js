@@ -1,64 +1,26 @@
-let demo = document.getElementById("demo");
+// document.getElementsByTagName("p")[0].innerHTML ="number 1"
+// document.getElementsByTagName("p")[1].innerHTML ="number 2"
+// document.getElementsByTagName("p")[2].innerHTML ="number 3"
+// document.getElementsByTagName("p")[3].innerHTML ="number 4"
+// document.getElementsByTagName("p")[4].innerHTML ="number 5"
+// document.getElementsByTagName("p")[5].innerHTML ="number 6"
+// document.getElementsByTagName("p")[6].innerHTML ="number 7"
+// document.getElementsByTagName("p")[7].innerHTML ="number 8"
+// document.getElementsByTagName("p")[8].innerHTML ="number 9"
+// document.getElementsByTagName("p")[9].innerHTML ="number 10"
 
-let experience = Number(prompt("how many years of expereince you have?"));
+let i;
 
-// if(experience >=0 && experience <1){
 
-// 	demo.innerHTML = "you have no expereince"
-// }
-// else if(experience >=1 && experience <2){
 
-// 	demo.innerHTML = "you are junior"
-// }
 
-// else if(experience >=2 && experience <3){
+let  theCollection = document.getElementsByTagName("p");
 
-// 	demo.innerHTML = "you are intermediate"
-// }
-// else if(experience >=3 && experience <4){
 
-// 	demo.innerHTML = "you are advanced"
-// }
-// else{
 
-// 	demo.innerHTML = "you are senior"
-// }
 
-// switch (experience) {
 
-// 	case 0:
-// 		demo.innerHTML= "you have no experience";
-// 		break;
-// 	case 1:
-// 		demo.innerHTML= "you are junior";
-// 		break;
-// 	case 2:
-// 		demo.innerHTML= "you are intermediate";
-// 		break;
-// 	case 3:	
-// 		demo.innerHTML= "you are advanced";
-// 		break;
-// 	default:
-// 		demo.innerHTML= "you are senior";
-// 		break;
+for (i=0; i<theCollection.length; i+=1){
+	theCollection[i].innerHTML = "number" + (i+1).toString();
+}
 
-// 	}
-
-switch (true) {
-
-	case experience <0:
-		demo.innerHTML= "you have no experience";
-		break;
-	case experience <=1:
-		demo.innerHTML= "you are junior";
-		break;
-	case experience <=2:
-		demo.innerHTML= "you are intermediate";
-		break;
-	case experience <=3:	
-		demo.innerHTML= "you are advanced";
-		break;
-	default:
-		demo.innerHTML= "you are senior";
-		break;
-		}
