@@ -76,15 +76,60 @@
 // div(10,5);
 // mul(10,5);
 
-function changeColor(){
+// function changeColor(){
 
-	let mylist = document.
-	getElementsByClassName("cars");
+// 	let mylist = document.
+// 	getElementsByClassName("cars");
+// 	let i;
+// 	for (i = 0; i<mylist.length; i += 1){
+//        mylist[i].style.color = "green";
+
+// 	}
+// }
+
+// changeColor();
+
+// let add = (a,b) => {
+// 	return a+b;
+// }
+
+// let sub = (a,b) => {
+// 	return a-b;
+// }
+
+// let mul = (a,b) => {
+// 	return a*b;
+// }
+
+// let div = (a,b) => {
+// 	return a/b;
+// }
+
+ let add = function() {
+
+	let arg = arguments.length;
 	let i;
-	for (i = 0; i<mylist.length; i += 1){
-       mylist[i].style.color = "green";
-
+	let result = 0;
+	for(i=0 ; i < arg; i+=1) {
+		result+=arguments[i];
 	}
+	return result;
+
 }
 
-changeColor();
+ let mul = function () {
+
+	let arg = arguments.length;
+	let i;
+	let result = 1;
+	for(i=0 ; i < arg; i+=1) {
+		result+=arguments[i];
+	}
+	return result;
+
+}
+
+console.log(add(10,5));
+
+
+
