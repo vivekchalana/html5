@@ -1,6 +1,9 @@
-let farm = ["horse", "sheep", "goat", "donkey", "horse"];
-let pets = ["cat", "dog", "fish"];
-let rodents = ["hamster", "genipig", "rabbit", "squirrel"];
+let evenNumbers = [];
+let counter = 0;
+let value = 1;
+for (counter = 0; counter<20; counter+=1){
 
-let allAnimals = [...farm,...pets,...rodents];
-console.log(allAnimals);
+	evenNumbers[counter] = value;
+	value +=10
+}
+document.getElementById("here").innerHTML = evenNumbers
